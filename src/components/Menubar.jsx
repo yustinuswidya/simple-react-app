@@ -10,9 +10,13 @@ function Menubar(){
     return (
 	    <div>
 		    <ul>
-			  {names.map((name) => (
-                <Link to="/about">{name}</Link>
-			  ))}
+			  {names.map((name) => 
+			  {
+				let names = name.toLowerCase()
+				return(
+					<Link to={`${names}`}>{name}</Link>
+				)
+			  })}
 		    </ul>
 	    </div>
     );
