@@ -4,7 +4,7 @@ import './App.css';
 // importing components from react-router-dom package
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Redirect,
 } from "react-router-dom";
@@ -29,7 +29,7 @@ function App() {
 
         {/* This is the alias of BrowserRouter i.e. Router */}
         <Router>
-          <Switch>
+          <Routes>
             {/* This route is for home component 
             with exact path "/", in component props 
             we passes the imported component*/}
@@ -49,7 +49,7 @@ function App() {
             route endpoints then, redirect triggers 
             and redirects app to home component with to="/" */}
             <Redirect to="/home" />
-          </Switch>
+          </Routes>
         </Router>
 
       </div>
