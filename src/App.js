@@ -6,7 +6,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Redirect,
+  // Redirect,
 } from "react-router-dom";
 
 // import components
@@ -47,8 +47,8 @@ function App() {
               
             {/* If any route mismatches the upper 
             route endpoints then, redirect triggers 
-            and redirects app to home component with to="/" */}
-            <Redirect to="/home" />
+            and redirects app to home component with to="/" 
+            <Redirect to="/home" /> */}
           </Routes>
         </Router>
 
