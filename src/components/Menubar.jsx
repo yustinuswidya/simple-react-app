@@ -11,7 +11,7 @@ function Menubar(){
 	    <div>
 		    <ul>
 			  {names.map((name) => (
-                <Link to="/{name}.toLowerCase()">{name}</Link>
+                <Link to="/about">{name}</Link>
 			  ))}
 		    </ul>
 	    </div>
