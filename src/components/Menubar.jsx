@@ -10,6 +10,7 @@ function Menubar(){
     return (
 	    <div>
 		    <ul>
+<<<<<<< HEAD
 			  {names.map((name) => 
 			  {
 				let names = name.toLowerCase()
@@ -17,6 +18,11 @@ function Menubar(){
 					<Link to={`${names}`}>{name}</Link>
 				)
 			  })}
+=======
+			  {names.map((name) => (
+				<Link to={`${name.toLowerCase()}`}>{name}</Link>
+			  ))}
+>>>>>>> 43718d29259b34a9cb42b714c610b84cf5c0fc89
 		    </ul>
 	    </div>
     );
