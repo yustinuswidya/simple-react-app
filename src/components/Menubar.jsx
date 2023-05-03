@@ -5,7 +5,7 @@ import {
   } from "react-router-dom";
 
 function Menubar(){
-    const names = ['About']; // , 'About', 'Contact'];
+    const names = ['Home', 'About', 'Contact'];
 
     return (
 	    <div>
@@ -14,7 +14,7 @@ function Menubar(){
 			  {
 				let names = name.toLowerCase()
 				return(
-					<Link to={`${names}`}>{name}</Link>
+					<li><Link to={`${names}`}>{name}</Link></li>
 				)
 			  })}
 		    </ul>

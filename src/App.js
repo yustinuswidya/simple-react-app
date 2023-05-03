@@ -5,9 +5,9 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // import components
-// import Home    from "./components/Home";
+import Home    from "./components/Home";
 import About from "./components/About";
-// import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 import Menubar from "./components/Menubar";
 
 function App() {
@@ -27,22 +27,9 @@ function App() {
             with exact path "/", in component props 
             we passes the imported component*/}
             <Route exact path='/' element={<About/>} />
+            <Route exact path='/home' element={<Home/>} />
             <Route exact path='/about' element={<About/>} />
-              
-            {/* This route is for about component 
-            with exact path "/about", in component 
-            props we passes the imported component 
-            <Route path="/about" component={About} />
-              
-            {/* This route is for contactus component
-            with exact path "/contactus", in 
-            component props we passes the imported component 
-            <Route path="/contact" component={Contact} /> */}
-              
-            {/* If any route mismatches the upper 
-            route endpoints then, redirect triggers 
-            and redirects app to home component with to="/" 
-            <Redirect to="/home" /> */}
+            <Route exact path='/contact' element={<Contact/>} />
           </Routes>
 
       </div>
