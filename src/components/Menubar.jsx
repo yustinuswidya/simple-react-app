@@ -20,6 +20,17 @@ function Menubar(){
 
 	console.log(idx);
 
+	const [joke, setJoke] = useState(null);
+	useEffect(() => {
+		fetch("https://www.themealdb.com/api/json/v1/1/random.php")
+		.then((response) => response.json())
+		.then((data) => {
+			// setJoke(data[0].joke);
+			console.log(data);
+		})
+		.catch((error) => console.log(error));
+	}, []);
+
     return (
 	    <div>
 		    <ul>
