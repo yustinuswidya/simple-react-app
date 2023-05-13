@@ -21,6 +21,8 @@ function App() {
         </p> */}
         <Menubar />
 
+        <h1>Blah</h1>
+
         {/* This is the alias of BrowserRouter i.e. Router */}
           <Routes>
             {/* This route is for home component 
