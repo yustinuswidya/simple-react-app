@@ -7,9 +7,9 @@ import {
 function Menubar(){
     const names = ['Home', 'About', 'Contact'];
 
-	var numbers = [3,56,2,48,5];
+	var numbers = [3,16,2,48,5];
 	const newNumber = numbers.find(function (num){
-		return num> 10;
+		return num > 20;
 	});
 
 	console.log(newNumber);
