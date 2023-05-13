@@ -27,7 +27,7 @@ function Menubar(){
 		.then((response) => response.json())
 		.then((data) => {
 			// setJoke(data[0].joke);
-			console.log(data);
+			console.log(data.meals);
 		})
 		.catch((error) => console.log(error));
 	}, []);
