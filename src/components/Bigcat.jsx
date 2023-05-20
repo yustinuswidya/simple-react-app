@@ -9,7 +9,7 @@ const getBigCat = async () => {
       // throw new Error('Data coud not be fetched!')
       console.log("error fetch " + url);
     } else {
-      // console.log(response);
+      console.log(response);
       return cat; 
     }
 
@@ -35,7 +35,7 @@ function Bigcat(){
 
     return(
         <div class="card" style="width: 18rem;">
-            <img src={cats[0].url} class="card-img-top" alt="big cat" />
+            <img src={/*cats[0].url*/} class="card-img-top" alt="big cat" />
         </div>
     );
 
