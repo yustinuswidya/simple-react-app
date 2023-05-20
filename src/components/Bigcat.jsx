@@ -29,6 +29,7 @@ function Bigcat(){
         // for(var i=0; i<10; i++){
             getBigCat().then((res) => {
             setCats(cats => [...cats,res]);
+            // console.log(cats);
           });
         // }
       }, []);
