@@ -7,7 +7,23 @@ function getBigCat(){
 }
 
 function Bigcat(){
-    getBigCat();
+    const [cats, setCats] = useState([]);
+
+    useEffect(() => {
+        for(var i=0; i<10; i++){
+            getBigCat().then((res) => {
+            setCats(cats => [...cats,res]);
+          });
+        }
+      }, []);
+
+    return(
+        {cats.map((cat) => {
+            <div class="card" style="width: 18rem;">
+                <img src={cat.url} class="card-img-top" alt="big cat" />
+            </div>
+        })}
+    );
 
 };
 
