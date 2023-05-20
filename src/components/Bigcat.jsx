@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 const getBigCat = async () => {
     const url = "https://randombig.cat/roar.json";
-
     const response = await fetch(url);
     const cat = await response.json();
     if (!response.ok) {
@@ -10,7 +9,7 @@ const getBigCat = async () => {
       console.log("error fetch " + url);
     } else {
       console.log(cat);
-      return cat; 
+      // return cat; 
     }
 
     /*fetch(url)
@@ -37,9 +36,7 @@ function Bigcat(){
     // {console.log(cats)}
 
     return(
-        <div class="card" style="width: 18rem;">
-            <img src="https://randombig.cat/0b627ed7-ca93-400e-9d38-d0c4ab62f8b6.jpg" class="card-img-top" alt="big cat" />
-        </div>
+        <p>BigCat</p>
     );
 
 };
