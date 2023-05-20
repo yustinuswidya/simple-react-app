@@ -9,6 +9,7 @@ import Home    from "./components/Home";
 import About   from "./components/About";
 import Contact from "./components/Contact";
 import Menubar from "./components/Menubar";
+import BigCat  from "./components/BigCat";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p> */}
         <Menubar />
+        <BigCat/>
 
         {/* This is the alias of BrowserRouter i.e. Router */}
           <Routes>
