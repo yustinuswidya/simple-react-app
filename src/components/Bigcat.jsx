@@ -9,7 +9,7 @@ const GetBigCat = async () => {
       console.log("error fetch " + url);
     } else {
       console.log(cat.url);
-      // return cat; 
+      return cat.url; 
     }
 
     /* const [cat, setCat] = useState("");
