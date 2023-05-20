@@ -27,7 +27,7 @@ function Bigcat(){
     useEffect(() => {
         // for(var i=0; i<10; i++){
             getBigCat().then((res) => {
-            // setCats(cats => [...cats,res]);
+            setCats(cats => [...cats,res]);
             console.log(res);
           });
         // }
