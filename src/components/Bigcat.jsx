@@ -33,9 +33,11 @@ function Bigcat(){
         // }
       }, []);
 
+    {console.log(cats)}
+
     return(
         <div class="card" style="width: 18rem;">
-            <img src={cats[0].url} class="card-img-top" alt="big cat" />
+            <img src="" class="card-img-top" alt="big cat" />
         </div>
     );
 
