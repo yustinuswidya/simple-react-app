@@ -17,6 +17,7 @@ const getBigCat = async () => {
         .then(response => response.json())
         .then(data => {
             console.log(data.url);
+            console.log(data);
             setCats(cat => [data.url]);
         });
     return cat;
