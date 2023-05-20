@@ -13,13 +13,13 @@ function Menubar(){
 		return num > 20;
 	});
 
-	console.log(newNumber);
+	// console.log(newNumber);
 
 	const idx = numbers.findIndex(function (num){
 		return num > 20;
 	});
 
-	console.log(idx);
+	// console.log(idx);
 
 	const [joke, setJoke] = useState(null);
 	useEffect(() => {
@@ -27,7 +27,7 @@ function Menubar(){
 		.then((response) => response.json())
 		.then((data) => {
 			// setJoke(data[0].joke);
-			console.log(data.meals);
+			// console.log(data.meals);
 		})
 		.catch((error) => console.log(error));
 	}, []);
