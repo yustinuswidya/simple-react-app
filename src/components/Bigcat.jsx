@@ -2,17 +2,17 @@ import React, { useEffect, useState } from "react";
 
 const GetBigCat = async () => {
     const url = "https://randombig.cat/roar.json";
-    // const response = await fetch(url);
-    // const cat = await response.json();
-    /* if (!response.ok) {
+    const response = await fetch(url);
+    const cat = await response.json();
+    if (!response.ok) {
       // throw new Error('Data coud not be fetched!')
       console.log("error fetch " + url);
     } else {
       console.log(cat);
       // return cat; 
-    } */
+    }
 
-    const [cat, setCat] = useState("");
+    /* const [cat, setCat] = useState("");
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -21,7 +21,7 @@ const GetBigCat = async () => {
             console.log(url);
             setCat(cat => [url]);
         });
-    return cat;
+    return cat; */
 }
 
 function Bigcat(){
