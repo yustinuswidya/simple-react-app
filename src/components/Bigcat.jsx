@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 
 function getBigCat(){
     const url = "https://randombig.cat/roar.json";
-    fetch(url).then(response => response.json()).then(data => console.log(data));
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            return data;
+        });
     return null;
 }
 
