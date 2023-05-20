@@ -9,7 +9,7 @@ const getBigCat = async () => {
       // throw new Error('Data coud not be fetched!')
       console.log("error fetch " + url);
     } else {
-      console.log(response);
+      console.log(cat);
       return cat; 
     }
 
