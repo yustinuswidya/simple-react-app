@@ -21,7 +21,6 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p> */}
         <Menubar />
-        <Bigcat/>
 
         {/* This is the alias of BrowserRouter i.e. Router */}
           <Routes>
@@ -33,6 +32,8 @@ function App() {
             <Route exact path='/about' element={<About/>} />
             <Route exact path='/contact' element={<Contact/>} />
           </Routes>
+
+          <Bigcat/>
 
       </div>
     </div>
