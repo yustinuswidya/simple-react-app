@@ -8,7 +8,7 @@ const GetBigCat = async () => {
       // throw new Error('Data coud not be fetched!')
       console.log("error fetch " + url);
     } else {
-      console.log(cat);
+      console.log(cat.url);
       // return cat; 
     }
 
