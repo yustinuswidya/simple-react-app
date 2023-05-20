@@ -4,21 +4,21 @@ const getBigCat = async () => {
     const url = "https://randombig.cat/roar.json";
     const response = await fetch(url);
     const cat = await response.json();
-    if (!response.ok) {
+    /* if (!response.ok) {
       // throw new Error('Data coud not be fetched!')
       console.log("error fetch " + url);
     } else {
       console.log(cat);
       // return cat; 
-    }
+    } */
 
-    /*fetch(url)
+    fetch(url)
         .then(response => response.json())
         .then(data => {
             console.log(data);
             return data;
         });
-    return null; */
+    return null;
 }
 
 function Bigcat(){
