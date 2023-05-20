@@ -36,7 +36,14 @@ function Bigcat(){
     // {console.log(cats)}
 
     return(
+      <div>  
         <p>BigCat</p>
+        <ol>
+          {cats.map((cat) => (
+              <li>{cat}</li>
+          ))}
+        </ol>
+      </div>  
     );
 
 };
