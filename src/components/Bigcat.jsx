@@ -28,17 +28,17 @@ function Bigcat(){
     useEffect(() => {
         // for(var i=0; i<10; i++){
             getBigCat().then((res) => {
-            setCats(cats => [...cats,res]);
+            // setCats(cats => [...cats,res]);
             // console.log(cats);
           });
         // }
       }, []);
 
-    {console.log(cats)}
+    // {console.log(cats)}
 
     return(
         <div class="card" style="width: 18rem;">
-            <img src="" class="card-img-top" alt="big cat" />
+            <img src="https://randombig.cat/0b627ed7-ca93-400e-9d38-d0c4ab62f8b6.jpg" class="card-img-top" alt="big cat" />
         </div>
     );
 
