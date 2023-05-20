@@ -8,20 +8,9 @@ const GetBigCat = async () => {
       // throw new Error('Data coud not be fetched!')
       console.log("error fetch " + url);
     } else {
-      console.log(cat.url);
+      // console.log(cat.url);
       return cat.url; 
     }
-
-    /* const [cat, setCat] = useState("");
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            let url = data.url;
-            console.log(data);
-            console.log(url);
-            setCat(cat => [url]);
-        });
-    return cat; */
 }
 
 function Bigcat(){
@@ -31,7 +20,7 @@ function Bigcat(){
         // for(var i=0; i<10; i++){
             GetBigCat().then((res) => {
               setCats(cats => [...cats,res]);
-              console.log(res);
+              // console.log(res);
             });
         // }
       }, []);
@@ -43,9 +32,11 @@ function Bigcat(){
         <p>BigCat</p>
         <ol>
           {cats.map((cat) => {
-            console.log(cat);
+            // console.log(cat);
             return (
-              <li>Hello {cat}</li>
+              <div class="card" style="width: 18rem;">
+                <img src={cat} alt="https://randombig.cat/0b627ed7-ca93-400e-9d38-d0c4ab62f8b6.jpg" class="card-img-top"/>
+              </div>
           )})}
         </ol>
       </div>  
