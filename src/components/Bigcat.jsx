@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const getBigCat = async () => {
+const GetBigCat = async () => {
     const url = "https://randombig.cat/roar.json";
     // const response = await fetch(url);
     // const cat = await response.json();
@@ -16,9 +16,10 @@ const getBigCat = async () => {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data.url);
+            let url = data.url;
             console.log(data);
-            setCat(cat => [data.url]);
+            console.log(url);
+            setCat(cat => [url]);
         });
     return cat;
 }
@@ -28,10 +29,10 @@ function Bigcat(){
 
     useEffect(() => {
         // for(var i=0; i<10; i++){
-            getBigCat().then((res) => {
-            setCats(cats => [...cats,res]);
-            console.log(res);
-          });
+            GetBigCat().then((res) => {
+              setCats(cats => [...cats,res]);
+              console.log(res);
+            });
         // }
       }, []);
 
