@@ -18,7 +18,7 @@ const getBigCat = async () => {
         .then(data => {
             console.log(data.url);
             console.log(data);
-            setCats(cat => [data.url]);
+            setCat(cat => [data.url]);
         });
     return cat;
 }
