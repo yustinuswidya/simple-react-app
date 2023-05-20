@@ -39,9 +39,11 @@ function Bigcat(){
       <div>  
         <p>BigCat</p>
         <ol>
-          {cats.map((cat) => (
-              <li>{cat}</li>
-          ))}
+          {cats.map((cat) => {
+            console.log(cat);
+            return (
+              <li>Hello {cat}</li>
+          )})}
         </ol>
       </div>  
     );
