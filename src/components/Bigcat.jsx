@@ -1,15 +1,25 @@
 import React, { useEffect, useState } from "react";
 
-function getBigCat(){
+const getBigCat = async () => {
     const url = "https://randombig.cat/roar.json";
 
-    fetch(url)
+    const response = await fetch(url);
+    const cat = await response.json();
+    if (!response.ok) {
+      // throw new Error('Data coud not be fetched!')
+      console.log("error fetch " + url);
+    } else {
+      // console.log(response);
+      return cat; 
+    }
+
+    /*fetch(url)
         .then(response => response.json())
         .then(data => {
             console.log(data);
             return data;
         });
-    return null;
+    return null; */
 }
 
 function Bigcat(){
