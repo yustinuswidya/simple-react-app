@@ -39,8 +39,8 @@ function Bigcat(){
       <div>  
         <p>BigCat</p>
         {cats.map((cat) => (
-          <div class="card" style={{width: '500px'}}>
-            <img src={cat} alt={cat} class="card-img-top"/>
+          <div class="card">
+            <img src={cat} alt={cat} style={{width: '500px'}} class="card-img-top"/>
           </div>
         ))}
       </div>  
