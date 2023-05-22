@@ -13,6 +13,14 @@ const GetBigCat = async () => {
     }
 }
 
+const BigCatImg = (url) => {
+  return (
+    <div class="card" style="width: 18rem;">
+      <img src={url} alt="https://randombig.cat/0b627ed7-ca93-400e-9d38-d0c4ab62f8b6.jpg" class="card-img-top"/>
+    </div>
+  )
+}
+
 function Bigcat(){
     const [cats, setCats] = useState([]);
 
@@ -31,11 +39,9 @@ function Bigcat(){
       <div>  
         <p>BigCat</p>
         <ol>
-          {cats.map((cat) => 
-            <div class="card" style="width: 18rem;">
-              <img src={cat} alt="https://randombig.cat/0b627ed7-ca93-400e-9d38-d0c4ab62f8b6.jpg" class="card-img-top"/>
-            </div>
-          )}
+          {cats.map((cat, index) => (
+            <BigCatImg url={cat} key={index} />
+          ))}
         </ol>
       </div>  
     );
