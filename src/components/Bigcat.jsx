@@ -25,12 +25,12 @@ function Bigcat(){
     const [cats, setCats] = useState([]);
 
     useEffect(() => {
-        // for(var i=0; i<10; i++){
+        for(var i=0; i<5; i++){
             GetBigCat().then((res) => {
               setCats(cats => [...cats,res]);
               // console.log(res);
             });
-        // }
+        }
       }, []);
 
     // {console.log(cats)}
@@ -39,8 +39,8 @@ function Bigcat(){
       <div>  
         <p>BigCat</p>
         {cats.map((cat) => (
-          <div class="card" style={{width: '8rem'}}>
-            <img src={cat} alt="https://randombig.cat/0b627ed7-ca93-400e-9d38-d0c4ab62f8b6.jpg" class="card-img-top"/>
+          <div class="card">
+            <img src={cat} alt={cat} class="card-img-top"/>
           </div>
         ))}
       </div>  
