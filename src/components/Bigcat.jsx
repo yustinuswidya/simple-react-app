@@ -32,7 +32,6 @@ function Bigcat(){
         <p>BigCat</p>
         <ol>
           {cats.map((cat) => 
-            // console.log(cat);
             <div class="card" style="width: 18rem;">
               <img src={cat} alt="https://randombig.cat/0b627ed7-ca93-400e-9d38-d0c4ab62f8b6.jpg" class="card-img-top"/>
             </div>
